@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 In order to use the App your ILIAS needs to be configured first. You need 2 Plugins (also Open Source) to make your ILIAS ready for the App:
 
-Follow the instructions here: https://github.com/JN0122/IACUBUSHelper
+Follow the instructions here: [https://github.com/Jakub-eAcademy/PegasusHelper](https://github.com/Jakub-eAcademy/PegasusHelper)
 
 The following tools are needed to build and deploy the app.
 

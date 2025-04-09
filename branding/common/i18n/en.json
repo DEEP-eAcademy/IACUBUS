@@ -28,7 +28,7 @@
     "map": "Map",
     "content": "Content",
     "Version": "Version",
-    "privacy": "iacobus-privacy-policy",
+    "privacy": "iacubus-privacy-policy",
     "datasecurity": { "title": "Privacy policy" },
     "object-list": {
         "title": "My Courses & Groups",
@@ -331,7 +331,7 @@
         "about-card": {
             "title": "About",
             "subtitle": "App Development & Maintenance",
-            "content": "The application is built upon the open-source ILIAS-PEGASUS solution and is currently maintained and developed by Jakub Niewelt."
+            "content": "The application is built upon the open-source ILIAS-PEGASUS solution and is currently maintained and developed by the NATO DEEP eAcademy IACUBUS Team."
         }
     }
 }

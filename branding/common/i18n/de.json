@@ -332,6 +332,11 @@
         "sturai-card": {
             "subtitle": "App-Entwicklung & Wartung",
             "content": "Die App wurde umgesetzt und wird gewartet durch die fluxlabs AG."
+        },
+        "about-card": {
+            "title": "Über",
+            "subtitle": "App-Entwicklung und -Wartung",
+            "content": "Die Anwendung basiert auf der Open-Source-Lösung ILIAS-PEGASUS und wird derzeit vom NATO DEEP eAcademy IACUBUS-Team gewartet und entwickelt."
         }
     }
 }

@@ -1,6 +1,6 @@
 /** angular */
 import { Component, ViewChild } from "@angular/core";
-import { AppVersion } from "@ionic-native/app-version/ngx";
+import { AppVersion } from "@awesome-cordova-plugins/app-version/ngx";
 import { IonSlides, NavController } from "@ionic/angular";
 @Component({
     templateUrl: "onboarding.html",

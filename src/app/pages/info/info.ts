@@ -1,8 +1,8 @@
 /** angular */
 import { Component } from "@angular/core";
 /** ionic-native */
-import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
-import { AppVersion } from "@ionic-native/app-version/ngx";
+import { InAppBrowser } from "@awesome-cordova-plugins/in-app-browser/ngx";
+import { AppVersion } from "@awesome-cordova-plugins/app-version/ngx";
 
 /*
   Generated class for the InfoPage page.

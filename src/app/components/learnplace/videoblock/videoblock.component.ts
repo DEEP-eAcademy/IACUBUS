@@ -1,5 +1,5 @@
 import { Component, Inject, Input, OnDestroy, OnInit } from "@angular/core";
-import { File } from "@ionic-native/file/ngx";
+import { File } from "@awesome-cordova-plugins/file/ngx";
 import { Platform } from "@ionic/angular";
 import { Subscription } from "rxjs";
 import { Filesystem, FILESYSTEM_TOKEN } from "../../../services/filesystem";

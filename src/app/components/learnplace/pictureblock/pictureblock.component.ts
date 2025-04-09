@@ -1,12 +1,12 @@
 import { Component, Inject, Input, OnInit } from "@angular/core";
 import { DomSanitizer, SafeUrl } from "@angular/platform-browser";
-import { File } from "@ionic-native/file/ngx";
+import { File } from "@awesome-cordova-plugins/file/ngx";
 import { Platform } from "@ionic/angular";
 import { Filesystem, FILESYSTEM_TOKEN } from "../../../services/filesystem";
 import { Logger } from "../../../services/logging/logging.api";
 import { Logging } from "../../../services/logging/logging.service";
 import { PictureBlockModel } from "../../../services/learnplace/block.model";
-import { WebView } from "@ionic-native/ionic-webview/ngx";
+import { WebView } from "@awesome-cordova-plugins/ionic-webview/ngx";
 
 @Component({
     selector: "picture-block",

@@ -12,7 +12,7 @@ import {
     FILE_DOWNLOADER,
     FileDownloader,
 } from "../../providers/file-transfer/file-download";
-import { File } from "@ionic-native/file/ngx";
+import { File } from "@awesome-cordova-plugins/file/ngx";
 import { FileStorageService } from "../filesystem/file-storage.service";
 import { HttpResponse } from "../../providers/http";
 

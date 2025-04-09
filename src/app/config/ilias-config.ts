@@ -162,7 +162,7 @@ const configSchema: object = {
                     privacyPolicy: {
                         type: "string",
                         default:
-                            "https://deepportal.hq.nato.int/eacademy/iacobus-privacy-policy/",
+                            "https://deepportal.hq.nato.int/eacademy/iacubus-privacy-policy/",
                     },
                 },
                 required: [

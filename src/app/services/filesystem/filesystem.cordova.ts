@@ -1,10 +1,10 @@
-import { FileOpener } from "@ionic-native/file-opener/ngx";
+import { FileOpener } from "@awesome-cordova-plugins/file-opener/ngx";
 import {
     DirectoryEntry,
     File,
     FileEntry,
     RemoveResult,
-} from "@ionic-native/file/ngx";
+} from "@awesome-cordova-plugins/file/ngx";
 import { Platform } from "@ionic/angular";
 import { IOError } from "../../error/errors";
 import { CantOpenFileTypeException } from "../../exceptions/CantOpenFileTypeException";

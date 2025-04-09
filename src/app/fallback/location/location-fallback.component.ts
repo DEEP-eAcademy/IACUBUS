@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Diagnostic } from "@ionic-native/diagnostic/ngx";
+import { Diagnostic } from "@awesome-cordova-plugins/diagnostic/ngx";
 import { ModalController } from "@ionic/angular";
 
 @Component({

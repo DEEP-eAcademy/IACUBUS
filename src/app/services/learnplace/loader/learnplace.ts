@@ -327,7 +327,9 @@ export class RestLearnplaceLoader implements LearnplaceLoader {
                 })
         )
             .pipe(
-                mergeMap((it) => from(this.learnplaceRepository.save(it))),
+                mergeMap((it: LearnplaceEntity) =>
+                    from(this.learnplaceRepository.save(it))
+                ),
                 mergeMap((it) => EMPTY),
                 catchError((error, _) => {
                     if (
@@ -522,7 +524,9 @@ export class RestLearnplaceLoader implements LearnplaceLoader {
                 })
         )
             .pipe(
-                mergeMap((it) => from(this.learnplaceRepository.save(it))),
+                mergeMap((it: LearnplaceEntity) =>
+                    from(this.learnplaceRepository.save(it))
+                ),
                 mergeMap((_) => EMPTY), // we want to emit void, so we map the save observable to an empty one
                 catchError((error, _) => {
                     if (

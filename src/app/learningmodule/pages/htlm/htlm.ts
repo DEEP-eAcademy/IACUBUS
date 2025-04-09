@@ -1,7 +1,7 @@
 import { Component, Inject } from "@angular/core";
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 import { ActivatedRoute, ParamMap } from "@angular/router";
-import { WebView } from "@ionic-native/ionic-webview/ngx";
+import { WebView } from "@awesome-cordova-plugins/ionic-webview/ngx";
 import { Observable, ReplaySubject } from "rxjs";
 import { Logger } from "../../../services/logging/logging.api";
 import { Logging } from "../../../services/logging/logging.service";

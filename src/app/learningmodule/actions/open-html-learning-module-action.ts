@@ -13,7 +13,7 @@ import {
 import {
     InAppBrowser,
     InAppBrowserOptions,
-} from "@ionic-native/in-app-browser/ngx";
+} from "@awesome-cordova-plugins/in-app-browser/ngx";
 import { LeaveAppDialogService } from "../../fallback/open-browser/leave-app.service";
 import { User } from "../../models/user";
 import { AuthenticationProvider } from "../../providers/authentication.provider";

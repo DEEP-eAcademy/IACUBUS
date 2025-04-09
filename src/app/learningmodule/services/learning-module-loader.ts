@@ -1,5 +1,5 @@
 import { Inject, Injectable, InjectionToken } from "@angular/core";
-import { Zip } from "@ionic-native/zip/ngx";
+import { Zip } from "@awesome-cordova-plugins/zip/ngx";
 import { LoadingService } from "../../fallback/loading/loading.service";
 import { ILIASObject } from "../../models/ilias-object";
 import { User } from "../../models/user";
@@ -123,7 +123,11 @@ export class RestLearningModuleLoader implements LearningModuleLoader {
         console.log(
             `UNZIPPING in ${localTmpZipDir} file ${tmpZipFile} => dir ${request.zipDirName}`
         );
-        await this.zip.unzip(`${localTmpZipDir}${tmpZipFile}`, localTmpZipDir);
+        await this.zip.unzip(
+            `${localTmpZipDir}${tmpZipFile}`,
+            localTmpZipDir,
+            () => {}
+        );
         this.loadingService.set(0.9);
 
         // Remove object because the app would report wrong storage numbers after the update got removed by the user.

@@ -8,7 +8,11 @@ import {
     LEARNPLACE_REPOSITORY,
     LearnplaceRepository,
 } from "../../providers/learnplace/repository/learnplace.repository";
-import { File, FileEntry, RemoveResult } from "@ionic-native/file/ngx";
+import {
+    File,
+    FileEntry,
+    RemoveResult,
+} from "@awesome-cordova-plugins/file/ngx";
 import { Optional } from "../../util/util.optional";
 import {
     LEARNPLACE_PATH_BUILDER,

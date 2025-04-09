@@ -62,7 +62,7 @@ import {
     OPEN_HTML_LEARNING_MODULE_ACTION_FACTORY,
     OpenHtmlLearningModuleActionFunction,
 } from "../../learningmodule/actions/open-html-learning-module-action";
-import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
+import { InAppBrowser } from "@awesome-cordova-plugins/in-app-browser/ngx";
 import { UserStorageService } from "../../services/filesystem/user-storage.service";
 import {
     LEARNING_MODULE_PATH_BUILDER,
@@ -359,7 +359,7 @@ export class ObjectListPage {
                 const wait: NodeJS.Timeout = setTimeout(() => {
                     clearTimeout(wait);
                     this.updatePageState(false);
-                    resolve();
+                    resolve(undefined);
                 }, 100);
             });
         this.updatePageState();

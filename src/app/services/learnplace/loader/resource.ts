@@ -1,5 +1,5 @@
 import { Inject, Injectable, InjectionToken } from "@angular/core";
-import { DirectoryEntry, File, Flags } from "@ionic-native/file/ngx";
+import { DirectoryEntry, File, Flags } from "@awesome-cordova-plugins/file/ngx";
 import { Platform } from "@ionic/angular";
 import { UserEntity } from "../../../entity/user.entity";
 import {

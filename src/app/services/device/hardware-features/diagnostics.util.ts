@@ -2,7 +2,7 @@
 import { Platform } from "@ionic/angular";
 import { Injectable } from "@angular/core";
 /** ionic-native */
-import { Diagnostic } from "@ionic-native/diagnostic/ngx";
+import { Diagnostic } from "@awesome-cordova-plugins/diagnostic/ngx";
 /** logging */
 import { Logger } from "../../logging/logging.api";
 import { Logging } from "../../logging/logging.service";

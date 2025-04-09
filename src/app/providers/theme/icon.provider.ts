@@ -4,8 +4,8 @@ import {
     SafeUrl,
 } from "@angular/platform-browser";
 import { Inject, Injectable } from "@angular/core";
-import { File } from "@ionic-native/file/ngx";
-import { WebView } from "@ionic-native/ionic-webview/ngx";
+import { File } from "@awesome-cordova-plugins/file/ngx";
+import { WebView } from "@awesome-cordova-plugins/ionic-webview/ngx";
 import { Settings } from "../../models/settings";
 import { Logger } from "../../services/logging/logging.api";
 import { Logging } from "../../services/logging/logging.service";

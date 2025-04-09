@@ -2,7 +2,7 @@
 import { HttpResponse as Response, HttpHeaders } from "@angular/common/http";
 import { InjectionToken, Injectable } from "@angular/core";
 /** ionic-native */
-import { HTTP, HTTPResponse } from "@ionic-native/http/ngx";
+import { HTTP, HTTPResponse } from "@awesome-cordova-plugins/http/ngx";
 /** logging */
 import { Logger } from "../../services/logging/logging.api";
 import { Logging } from "../../services/logging/logging.service";

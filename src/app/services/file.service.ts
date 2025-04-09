@@ -1,6 +1,6 @@
 /** angular */
 import { Injectable } from "@angular/core";
-import { FileOpener } from "@ionic-native/file-opener/ngx";
+import { FileOpener } from "@awesome-cordova-plugins/file-opener/ngx";
 /** ionic-native */
 import {
     DirectoryEntry,
@@ -8,8 +8,8 @@ import {
     FileEntry,
     FileError,
     Flags,
-} from "@ionic-native/file/ngx";
-import { Network } from "@ionic-native/network/ngx";
+} from "@awesome-cordova-plugins/file/ngx";
+import { Network } from "@awesome-cordova-plugins/network/ngx";
 import { Platform } from "@ionic/angular";
 import { TranslateService } from "@ngx-translate/core";
 /** errors and exceptions */

@@ -1,9 +1,9 @@
 /** angular */
 import { Component } from "@angular/core";
-import { AppVersion } from "@ionic-native/app-version/ngx";
+import { AppVersion } from "@awesome-cordova-plugins/app-version/ngx";
 import { ModalController, NavParams } from "@ionic/angular";
 /** ionic-native */
-import { InAppBrowserOptions } from "@ionic-native/in-app-browser";
+import { InAppBrowserOptions } from "@awesome-cordova-plugins/in-app-browser";
 /** logging */
 import { Logger } from "../../services/logging/logging.api";
 import { Logging } from "../../services/logging/logging.service";

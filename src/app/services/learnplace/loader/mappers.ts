@@ -22,7 +22,7 @@ import {
 } from "./resource";
 import { Logger } from "../../../services/logging/logging.api";
 import { Logging } from "../../../services/logging/logging.service";
-import { File } from "@ionic-native/file/ngx";
+import { File } from "@awesome-cordova-plugins/file/ngx";
 import { isDefined } from "../../../util/util.function";
 import { AccordionEntity } from "../../../entity/learnplace/accordion.entity";
 

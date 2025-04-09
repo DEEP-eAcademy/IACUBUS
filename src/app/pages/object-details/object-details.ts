@@ -1,7 +1,7 @@
 /** angular */
 import { Component, Inject, NgZone } from "@angular/core";
 /** ionic-native */
-import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
+import { InAppBrowser } from "@awesome-cordova-plugins/in-app-browser/ngx";
 import {
     AlertController,
     ModalController,

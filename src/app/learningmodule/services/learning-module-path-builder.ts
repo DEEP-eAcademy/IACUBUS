@@ -1,5 +1,5 @@
 import { Injectable, InjectionToken } from "@angular/core";
-import { File } from "@ionic-native/file/ngx";
+import { File } from "@awesome-cordova-plugins/file/ngx";
 import { Platform } from "@ionic/angular";
 import { FileStorageService } from "../../services/filesystem/file-storage.service";
 

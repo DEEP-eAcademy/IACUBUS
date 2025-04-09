@@ -12,7 +12,7 @@ import {
     InAppBrowser,
     InAppBrowserObject,
     InAppBrowserOptions,
-} from "@ionic-native/in-app-browser/ngx";
+} from "@awesome-cordova-plugins/in-app-browser/ngx";
 import { NavController, ToastController } from "@ionic/angular";
 /** misc */
 import { TranslateService } from "@ngx-translate/core";

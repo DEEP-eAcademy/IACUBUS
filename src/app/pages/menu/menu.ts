@@ -4,7 +4,7 @@ import {
     InAppBrowser,
     InAppBrowserObject,
     InAppBrowserOptions,
-} from "@ionic-native/in-app-browser/ngx";
+} from "@awesome-cordova-plugins/in-app-browser/ngx";
 import { NavController } from "@ionic/angular";
 import { ViewWillEnter } from "ionic-lifecycle-interface";
 import {

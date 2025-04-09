@@ -1,6 +1,6 @@
 /** angular */
 import { Inject, Injectable } from "@angular/core";
-import { FileEntry } from "@ionic-native/file";
+import { FileEntry } from "@awesome-cordova-plugins/file";
 import { AlertController } from "@ionic/angular";
 import { TranslateService } from "@ngx-translate/core";
 import { from, merge, Observable } from "rxjs";

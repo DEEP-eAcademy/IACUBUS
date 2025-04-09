@@ -28,7 +28,7 @@
     "map": "Mapa",
     "content": "Tre\u015b\u0107",
     "Version": "Wersja",
-    "privacy": "iacobus-privacy-policy",
+    "privacy": "iacubus-privacy-policy",
     "datasecurity": {
         "title": "Polityka prywatno\u015bci"
     },
@@ -333,7 +333,7 @@
         "about-card": {
             "title": "O aplikacji",
             "subtitle": "Rozw\u00f3j i utrzymanie aplikacji",
-            "content": "Aplikacja jest oparta na rozwi\u0105zaniu open-source ILIAS-PEGASUS i jest obecnie utrzymywana oraz rozwijana przez Jakuba Niewelta."
+            "content": "Aplikacja jest oparta na rozwi\u0105zaniu open-source ILIAS-PEGASUS i jest obecnie utrzymywana oraz rozwijana przez zespół NATO DEEP eAcademy IACUBUS Team."
         }
     }
 }

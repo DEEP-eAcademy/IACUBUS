@@ -1,5 +1,5 @@
 import { Inject, Injectable } from "@angular/core";
-import { DirectoryEntry, File } from "@ionic-native/file/ngx";
+import { DirectoryEntry, File } from "@awesome-cordova-plugins/file/ngx";
 import { FileStorageService } from "src/app/services/filesystem/file-storage.service";
 import { StorageUtilization } from "../../services/filesystem/user-storage.mamager";
 import { UserStorageService } from "../../services/filesystem/user-storage.service";

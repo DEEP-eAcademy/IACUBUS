@@ -4,9 +4,9 @@ import {
     Inject,
     Injectable,
 } from "@angular/core";
-import { Network } from "@ionic-native/network/ngx";
-import { SQLite } from "@ionic-native/sqlite/ngx";
-import { StatusBar } from "@ionic-native/status-bar/ngx";
+import { Network } from "@awesome-cordova-plugins/network/ngx";
+import { SQLite } from "@awesome-cordova-plugins/sqlite/ngx";
+import { StatusBar } from "@awesome-cordova-plugins/status-bar/ngx";
 import { Platform } from "@ionic/angular";
 import { TranslateService } from "@ngx-translate/core";
 import { getConnection } from "typeorm/browser";

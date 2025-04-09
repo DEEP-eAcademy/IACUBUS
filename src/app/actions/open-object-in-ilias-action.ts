@@ -1,12 +1,12 @@
 /** angular */
 import { InjectionToken } from "@angular/core";
-import { SafariViewController } from "@ionic-native/safari-view-controller/ngx";
+import { SafariViewController } from "@awesome-cordova-plugins/safari-view-controller/ngx";
 import { ModalController, Platform } from "@ionic/angular";
 /** ionic-native */
 import {
     InAppBrowser,
     InAppBrowserOptions,
-} from "@ionic-native/in-app-browser/ngx";
+} from "@awesome-cordova-plugins/in-app-browser/ngx";
 /** logging */
 import { Logger } from "../services/logging/logging.api";
 import { Logging } from "../services/logging/logging.service";

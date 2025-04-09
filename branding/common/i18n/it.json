@@ -308,6 +308,11 @@
         "sturai-card": {
             "subtitle": "Sviluppo e manutenzione delle applicazioni",
             "content": "L'applicazione è stata implementata e viene mantenuta da fluxlabs AG."
+        },
+        "about-card": {
+            "title": "Informazioni su",
+            "subtitle": "Sviluppo e manutenzione dell'applicazione",
+            "content": "L'applicazione è costruita sulla soluzione open-source ILIAS-PEGASUS ed è attualmente mantenuta e sviluppata dal team IACUBUS della NATO DEEP eAcademy."
         }
     }
 }

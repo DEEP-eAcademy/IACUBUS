@@ -1,9 +1,9 @@
 /** angular */
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
-import { AppVersion } from "@ionic-native/app-version/ngx";
+import { AppVersion } from "@awesome-cordova-plugins/app-version/ngx";
 /** ionic-native */
-import { SplashScreen } from "@ionic-native/splash-screen/ngx";
+import { SplashScreen } from "@awesome-cordova-plugins/splash-screen/ngx";
 import {
     ModalController,
     NavController,

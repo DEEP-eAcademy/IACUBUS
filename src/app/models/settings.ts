@@ -1,5 +1,5 @@
 /** ionic-native */
-import { Network } from "@ionic-native/network/ngx";
+import { Network } from "@awesome-cordova-plugins/network/ngx";
 /** misc */
 import { ActiveRecord, SQLiteConnector } from "./active-record";
 import { SQLiteDatabaseService } from "../services/database.service";

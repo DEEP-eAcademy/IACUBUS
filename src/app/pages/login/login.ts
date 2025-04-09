@@ -1,5 +1,5 @@
 import { Component, Inject, NgZone } from "@angular/core";
-import { AppVersion } from "@ionic-native/app-version/ngx";
+import { AppVersion } from "@awesome-cordova-plugins/app-version/ngx";
 import {
     AlertController,
     ModalController,

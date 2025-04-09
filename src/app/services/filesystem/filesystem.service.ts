@@ -1,4 +1,4 @@
-import { FileEntry, RemoveResult } from "@ionic-native/file/ngx";
+import { FileEntry, RemoveResult } from "@awesome-cordova-plugins/file/ngx";
 import { InjectionToken } from "@angular/core";
 
 /**

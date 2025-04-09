@@ -39,7 +39,7 @@ interface AlertEntry {
     providedIn: "root",
 })
 export class PegasusErrorHandler implements ErrorHandler {
-    private static readonly ERROR_TITLE: string = "IACOBUS";
+    private static readonly ERROR_TITLE: string = "IACUBUS";
     private displayedAlerts: Array<AlertEntry> = [];
 
     private readonly log: Logger = Logging.getLogger(PegasusErrorHandler.name);

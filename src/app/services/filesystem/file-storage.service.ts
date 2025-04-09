@@ -1,4 +1,9 @@
-import { DirectoryEntry, Entry, File, Flags } from "@ionic-native/file/ngx";
+import {
+    DirectoryEntry,
+    Entry,
+    File,
+    Flags,
+} from "@awesome-cordova-plugins/file/ngx";
 import { Platform } from "@ionic/angular";
 import { Injectable } from "@angular/core";
 import { AuthenticationProvider } from "../../providers/authentication.provider";

@@ -25,7 +25,7 @@ import {
     LearnplacePathBuilderImpl,
     ResourceTransfer,
 } from "./resource";
-import { File } from "@ionic-native/file/ngx";
+import { File } from "@awesome-cordova-plugins/file/ngx";
 import { Platform } from "@ionic/angular";
 import { AccordionEntity } from "../../../entity/learnplace/accordion.entity";
 import { VisitJournalEntity } from "../../../entity/learnplace/learnplace.entity";

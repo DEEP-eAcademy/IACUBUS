@@ -158,3 +158,5 @@ branding/brands/*/resources/ios/splash
 branding/brands/*/resources/android/icon
 branding/brands/*/resources/android/splash
 branding/brands/*/resources/android/xml
+
+.angular/

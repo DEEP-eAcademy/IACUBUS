@@ -259,9 +259,7 @@ export class SynchronizationService {
     async processOfflineSyncQueue(): Promise<void> {
         if (!window.navigator.onLine) {
             await this.resetOfflineSynchronization();
-            throw new OfflineException(
-                "Tried to sync files when device was offline."
-            );
+            return;
         }
 
         if (this.syncOfflineQueue.length <= this.syncOfflineQueueCnt) {

@@ -13,8 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
--   Update Android SDK version
--   Change old application name and update link to git
+-   Change old application name and update link to GitHub
 
 ## [4.7.0]
 

@@ -15,17 +15,13 @@ Follow the instructions here: [https://github.com/DEEP-eAcademy/PegasusHelper](h
 
 The following tools are needed to build and deploy the app.
 
-#### Ionic CLI:
+### Dependencies
 
-```bash
-npm install -g ionic
-```
+This project requires:
 
-#### Cordova CLI:
-
-```bash
-npm install -g cordova
-```
+-   Node 18.20
+-   Java 11
+-   Gradle 8.14
 
 #### Xcode:
 
@@ -71,8 +67,6 @@ Install Android Studio from google.
 Install the latest Android SDK with the Android Studio Android SDK manager.
 Add the root of your Android SDK to the environment variable $ANDROID_HOME.
 
-Install the Java 11 SDK from oracle.
-
 ### Clone the project
 
 Clone the project to your workspace.
@@ -110,7 +104,7 @@ PRODUCTION="true"
 ### Install Brand
 
 ```bash
-npm run setbrand -- --brand="vanilla"
+npm run setbrand -- --brand="IACUBUS"
 ```
 
 or
@@ -122,7 +116,8 @@ or
 Install the both platforms.
 
 ```bash
-npx ionic cordova prepare
+npx ionic cordova prepare ios
+npx ionic cordova prepare android
 ```
 
 ### Debug Build
@@ -179,10 +174,10 @@ npm run karma
 The iOS app can be build with the following command.
 
 ```bash
-npx ionic cordova build ios  --prod
+npx ionic cordova build ios --prod --release
 ```
 
-Open your Xcode Workspace (the YourAppName.xcworkspace in ILIAS-Pegasus/Platforms/ios) and set **_Certifacates_**, your **_Team ID_**, set the `iOS Deployment Target` to `13.0` (in `CordovaLib->Build Settings`) and Release it to the AppStore.
+Open your Xcode Workspace (the YourAppName.xcworkspace in ./platforms/ios) and set **_Certifacates_**, your **_Team ID_**, set the `iOS Deployment Target` to `14.0` (in `CordovaLib->Build Settings`) and Release it to the AppStore.
 
 Check here for information about Certificates: https://developer.apple.com/support/certificates/
 
@@ -196,9 +191,9 @@ As soon as you have all your profiles create an Archive in `Xcode -> Product -> 
 npx ionic cordova build android --prod --release
 ```
 
-Create a key, sign your application and upload it following the ionic guide: https://ionicframework.com/docs/deployment/play-store
+Change target SDK version in Android Studio settings, right click on `app` and select `Open Module Settings`. Then select `Default Config` tab and edit `Target SDK Version` option to `34`.
 
-<!-- ### Troubleshoting -->
+Create a key, sign your application and upload it following the ionic guide: https://ionicframework.com/docs/deployment/play-store
 
 ### Build With
 

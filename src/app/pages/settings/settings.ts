@@ -7,7 +7,6 @@ import {
     ToastController,
 } from "@ionic/angular";
 import { TranslateService } from "@ngx-translate/core";
-import { load } from "dotenv";
 import { Observable, ReplaySubject } from "rxjs";
 import { map } from "rxjs/operators";
 /** misc */

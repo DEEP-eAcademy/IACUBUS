@@ -1,6 +1,6 @@
 <ion-content class="page_onboarding">
-    <ion-slides pager="false">
-        <ion-slide class="step-one">
+    <swiper-container pager="false" centered-slides="true" #swiper>
+        <swiper-slide class="step-one">
             <img src="assets/img/onboarding_welcome.png" class="logo" />
             <h1>
                 {{ 'onboarding.title1' | translate:{app_name: (this.appName |
@@ -46,36 +46,34 @@
                 (click)="nextSlide()"
                 >{{ 'onboarding.next' | translate}}</ion-button
             >
-        </ion-slide>
-        <ion-slide class="step-two">
-            <figure>
-                <img
-                    src="assets/img/onboarding_decentralized.png"
-                    class="decentral"
-                />
-                <figcaption>
-                    <h1>{{ 'onboarding.title2' | translate}}</h1>
-                    <p class="concept1">
-                        {{ 'onboarding.concept1' | translate:{app_name:
-                        (this.appName | async)} }}
-                    </p>
-                    <p class="concept2">
-                        {{ 'onboarding.concept2' | translate}}
-                        <ion-label href="mailto:support@ilias-pegasus.de"
-                            >support@ilias-pegasus.de</ion-label
-                        >
-                    </p>
-                </figcaption>
-                <ion-button
-                    color="light"
-                    shape="round"
-                    fill="outline"
-                    (click)="nextSlide()"
-                    >{{ 'onboarding.next' | translate}}</ion-button
-                >
-            </figure>
-        </ion-slide>
-        <ion-slide class="step-three">
+        </swiper-slide>
+        <swiper-slide class="step-two">
+            <img
+                src="assets/img/onboarding_decentralized.png"
+                class="decentral"
+            />
+            <h1>{{ 'onboarding.title2' | translate}}</h1>
+            <ion-text class="ion-margin-horizontal">
+                <p class="concept1 ion-text-center">
+                    {{ 'onboarding.concept1' | translate:{app_name:
+                    (this.appName | async)} }}
+                </p>
+                <p class="concept2 ion-text-center">
+                    {{ 'onboarding.concept2' | translate}}
+                    <ion-label href="mailto:support@ilias-pegasus.de"
+                        >support&#64;ilias-pegasus.de</ion-label
+                    >
+                </p>
+            </ion-text>
+            <ion-button
+                color="light"
+                shape="round"
+                fill="outline"
+                (click)="nextSlide()"
+                >{{ 'onboarding.next' | translate}}</ion-button
+            >
+        </swiper-slide>
+        <swiper-slide class="step-three">
             <img src="assets/icon/menu_lock.svg" class="lock" />
             <h1>{{ 'onboarding.title3' | translate}}</h1>
             <ion-text class="ion-margin-horizontal">
@@ -105,6 +103,6 @@
                 (click)="dismiss()"
                 >{{ 'onboarding.start' | translate}}</ion-button
             >
-        </ion-slide>
-    </ion-slides>
+        </swiper-slide>
+    </swiper-container>
 </ion-content>

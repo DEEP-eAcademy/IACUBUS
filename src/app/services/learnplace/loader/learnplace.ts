@@ -317,7 +317,7 @@ export class RestLearnplaceLoader implements LearnplaceLoader {
                 videoBlocks,
                 accordionBlocks
             ) =>
-                entity.applies(function (): void {
+                entity.applies(function (this: LearnplaceEntity): void {
                     this.visitJournal = visitJournal;
                     this.textBlocks = textBlocks;
                     this.pictureBlocks = pictureBlocks;
@@ -491,7 +491,7 @@ export class RestLearnplaceLoader implements LearnplaceLoader {
                 videoBlocks,
                 accordionBlocks
             ) =>
-                entity.applies(function (): void {
+                entity.applies(function (this: LearnplaceEntity): void {
                     this.objectId = learnplace.objectId;
                     this.user = Promise.resolve(user.get());
 

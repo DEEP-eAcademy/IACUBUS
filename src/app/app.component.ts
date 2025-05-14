@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { AppVersion } from "@awesome-cordova-plugins/app-version/ngx";
 /** ionic-native */
+import { register } from "swiper/element/bundle";
 import { SplashScreen } from "@awesome-cordova-plugins/splash-screen/ngx";
 import {
     ModalController,
@@ -29,6 +30,8 @@ interface NavigatorSplashScreen {
         hide(): void;
     };
 }
+
+register();
 
 @Component({
     selector: "app-root",

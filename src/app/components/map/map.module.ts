@@ -8,7 +8,6 @@ import { IonicModule, NavParams } from "@ionic/angular";
     declarations: [MapComponent],
     imports: [CommonModule, FormsModule, ReactiveFormsModule, IonicModule],
     exports: [MapComponent],
-    entryComponents: [MapComponent],
     providers: [NavParams],
 })
 export class MapModule {}

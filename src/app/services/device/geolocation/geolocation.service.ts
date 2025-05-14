@@ -24,11 +24,11 @@ const geoOptions: PositionOptions = {
 export class Geolocation {
     private readonly log: Logger = Logging.getLogger("Geolocation");
 
-    private readonly position$: Observable<Position> = new Observable<Position>(
-        (subscriber): TeardownLogic => {
+    private readonly position$: Observable<GeolocationPosition> =
+        new Observable<GeolocationPosition>((subscriber): TeardownLogic => {
             const handle: number = navigator.geolocation.watchPosition(
                 (it) => subscriber.next(it),
-                (error: PositionError) => {
+                (error: GeolocationPositionError) => {
                     const messages: Map<number, string> = new Map<
                         number,
                         string
@@ -74,8 +74,7 @@ export class Geolocation {
                     () => `Geolocation API handle released -> ${handle}`
                 );
             };
-        }
-    );
+        });
 
     /**
      * Checks if the Geolocation API is defined.
@@ -93,7 +92,7 @@ export class Geolocation {
      *
      * @throws {Error} Throws if the position api is not enabled.
      */
-    async getCurrentPosition(): Promise<Position> {
+    async getCurrentPosition(): Promise<GeolocationPosition> {
         if (!this.isAvailable) {
             this.log.error(
                 () => "Can't fetch position without geolocation api."
@@ -101,7 +100,7 @@ export class Geolocation {
             throw new Error("Can't fetch position without geolocation api.");
         }
 
-        return new Promise<Position>((resolve, reject): void => {
+        return new Promise<GeolocationPosition>((resolve, reject): void => {
             navigator.geolocation.getCurrentPosition(
                 resolve,
                 reject,
@@ -116,7 +115,7 @@ export class Geolocation {
      *
      * @throws {Error} Throws if the position api is not enabled.
      */
-    watchPosition(): Observable<Position> {
+    watchPosition(): Observable<GeolocationPosition> {
         if (!this.isAvailable) {
             this.log.error(
                 () => "Can't fetch position without geolocation api."

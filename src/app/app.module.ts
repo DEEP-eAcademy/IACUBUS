@@ -1,4 +1,5 @@
-import { HttpClient, HttpClientModule, XhrFactory } from "@angular/common/http";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { XhrFactory } from "@angular/common";
 import {
     ClassProvider,
     ErrorHandler,

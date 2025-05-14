@@ -37,7 +37,7 @@ export class DownloadFileAction extends ILIASObjectAction {
             () =>
                 `Do we need to download the file first? ${this.fileObject.needsDownload}`
         );
-        if (this.fileObject.needsDownload && this.file.isOffline())
+        if (this.fileObject.needsDownload && this.file.isOffline()) {
             throw new OfflineException(
                 "File requireds download and is offline at the same time."
             );

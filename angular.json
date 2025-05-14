@@ -1,7 +1,6 @@
 {
     "$schema": "./node_modules/@angular-devkit/core/src/experimental/workspace/workspace-schema.json",
     "version": 1,
-    "defaultProject": "app",
     "newProjectRoot": "projects",
     "projects": {
         "app": {
@@ -90,7 +89,6 @@
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "aot": true,
                             "extractLicenses": true,
@@ -116,6 +114,15 @@
                                 }
                             ],
                             "progress": false
+                        },
+                        "development": {
+                            "buildOptimizer": false,
+                            "optimization": false,
+                            "vendorChunk": true,
+                            "extractLicenses": false,
+                            "sourceMap": true,
+                            "namedChunks": true,
+                            "aot": false
                         }
                     }
                 },
@@ -130,6 +137,9 @@
                         },
                         "ci": {
                             "progress": false
+                        },
+                        "development": {
+                            "browserTarget": "app:build:development"
                         }
                     }
                 },

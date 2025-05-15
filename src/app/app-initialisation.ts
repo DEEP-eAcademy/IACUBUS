@@ -31,6 +31,7 @@ export class AppInitialisation {
         "fr",
         "en",
         "it",
+        "ar",
     ]);
 
     constructor(

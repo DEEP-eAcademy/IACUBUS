@@ -17,12 +17,13 @@ import { AuthenticationProvider } from "./providers/authentication.provider";
 import { SQLiteDatabaseService } from "./services/database.service";
 import { Database } from "./services/database/database";
 import { DB_MIGRATION, DBMigration } from "./services/migration/migration.api";
+import { LanguageService } from "./services/language/language.service";
 
 @Injectable({
     providedIn: "root",
 })
 export class AppInitialisation {
-    private readonly FALLBACK_LANGUAGE: string = "de";
+    private readonly FALLBACK_LANGUAGE: string = "en";
     private readonly SUPPORTED_LANGUAGES: Set<string> = new Set([
         "uk",
         "pl",
@@ -39,6 +40,7 @@ export class AppInitialisation {
         private readonly database: Database,
         @Inject(DB_MIGRATION) private readonly migration: DBMigration,
         private readonly translate: TranslateService,
+        private readonly language: LanguageService,
         private readonly statusBar: StatusBar
     ) {}
 
@@ -75,7 +77,7 @@ export class AppInitialisation {
         if (AuthenticationProvider.isLoggedIn()) {
             const user: User = AuthenticationProvider.getUser();
             const setting: Settings = await Settings.findByUserId(user.id);
-            this.translate.use(setting.language);
+            this.language.setLanguage(setting.language);
         } else {
             // get the language of the navigator an check if it is supported. default is de
             const language: string = !!navigator.language
@@ -102,7 +104,7 @@ export class AppInitialisation {
                     break;
                 }
             }
-            this.translate.use(lng);
+            this.language.setLanguage(lng);
         }
         this.translate.setDefaultLang(this.FALLBACK_LANGUAGE);
     }

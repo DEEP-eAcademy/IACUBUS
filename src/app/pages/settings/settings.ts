@@ -20,6 +20,8 @@ import { User } from "../../models/user";
 import { AuthenticationProvider } from "../../providers/authentication.provider";
 import { UserStorageMamager } from "../../services/filesystem/user-storage.mamager";
 import { UserStorageService } from "../../services/filesystem/user-storage.service";
+import { LanguageService } from "../../services/language/language.service";
+
 /** services */
 import {
     FooterToolbarService,
@@ -51,6 +53,7 @@ export class SettingsPage implements OnInit, OnDestroy {
         private readonly toast: ToastController,
         private readonly footerToolbar: FooterToolbarService,
         private readonly translate: TranslateService,
+        private readonly language: LanguageService,
         @Inject(CONFIG_PROVIDER)
         private readonly configProvider: ConfigProvider,
         private readonly alertCtr: AlertController,
@@ -111,7 +114,7 @@ export class SettingsPage implements OnInit, OnDestroy {
             }
 
             this.log.info(() => "Settings saved successfully.");
-            await this.translate.use(this.settings.language).toPromise();
+            this.language.setLanguage(this.settings.language);
 
             this.log.trace(() => "Switching language successful.");
 

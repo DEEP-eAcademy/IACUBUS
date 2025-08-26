@@ -1,9 +1,0 @@
-{
-  "ilias_installation_ids": [21,17],
-  "projectConfig": {
-    "androidId": "ch.studerraimann.ilias.studOn",
-    "id": "ch.studerraimann.ilias.studon",
-    "name": "StudOn",
-    "description": "Download, sync and store ILIAS-files on your device"
-  }
-}

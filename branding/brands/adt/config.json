@@ -1,9 +1,0 @@
-{
-  "ilias_installation_ids": [14,42,37],
-  "projectConfig": {
-    "id": "ch.studerraimann.ilias.adt",
-    "name": "MyEform",
-
-    "description": "Download, sync and store ILIAS-files on your device"
-  }
-}
